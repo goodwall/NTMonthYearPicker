@@ -306,7 +306,7 @@ numberOfRowsInComponent:(NSInteger)component {
     }
 
     // Set label text & color
-    label.text = [(isYearComponent ? _years : _months) objectAtIndex:row];
+    label.text = [[(isYearComponent ? _years : _months) objectAtIndex:row] capitalizedString];
     label.textColor = (outOfBounds ? [UIColor grayColor] : [UIColor blackColor]);
 
     return label;
